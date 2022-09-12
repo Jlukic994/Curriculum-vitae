@@ -1,0 +1,180 @@
+img {
+  max-width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button,
+a {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  background-color: rgb(209, 209, 209);
+}
+
+/************LEFT COLUMN*************/
+.left-col {
+  background-color: #2596be;
+}
+
+.cv-image {
+  width: 150px;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-list img {
+  width: 30px;
+  margin: 5px 10px 5px 0;
+}
+
+.contact-list li {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list {
+  padding-left: 18px;
+}
+
+.contact-list li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  word-break: break-all;
+  text-align: center;
+}
+
+.contact-list li a:hover {
+  color: rgb(196, 194, 194);
+}
+
+.skills-list li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.left-section h3 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.left-section p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/************RIGHT COLUMN*************/
+
+.right-col {
+  background-color: #fff;
+}
+
+.right-section h2 {
+  font-size: 40px;
+}
+
+.right-section h3 {
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+
+.right-section ul {
+  padding-left: 18px;
+}
+
+.right-section ul li,
+.right-section p,
+.right-section a,
+.right-section span {
+  font-size: 18px;
+  margin: 8px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.right-section span {
+  font-style: italic;
+}
+
+.right-section a {
+  font-weight: normal;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+}
+
+.right-section a:hover {
+  color: #2596be;
+}
+
+.right-section .link-p {
+  font-weight: bold;
+}
+
+/************RESPONSIVE*************/
+@media only screen and (max-width: 992px) {
+  .contact-list li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-div {
+    text-align: center;
+  }
+
+  .left-section h3 {
+    font-size: 22px;
+  }
+
+  .right-col h2 {
+    font-size: 35px;
+  }
+
+  .right-col h3 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .left-section {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .left-col {
+    padding: 48px !important;
+  }
+
+  .contact-list li {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-div {
+    text-align: left;
+    display: inline;
+  }
+}
